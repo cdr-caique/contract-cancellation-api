@@ -27,7 +27,9 @@ def configure_logging() -> None:
     handler = logging.StreamHandler()
     handler.addFilter(CorrelationIdFilter())
     handler.setFormatter(
-        logging.Formatter("%(asctime)s %(levelname)s correlation_id=%(correlation_id)s %(name)s %(message)s")
+        logging.Formatter(
+            "%(asctime)s %(levelname)s correlation_id=%(correlation_id)s %(name)s %(message)s"
+        )
     )
 
     root_logger.setLevel(logging.INFO)

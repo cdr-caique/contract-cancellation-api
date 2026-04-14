@@ -11,7 +11,6 @@ from alembic import op
 import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
-
 revision: str = "0001_initial_contract_schema"
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
@@ -61,7 +60,9 @@ def upgrade() -> None:
         sa.PrimaryKeyConstraint("id"),
         sa.UniqueConstraint("idempotency_key"),
     )
-    op.create_index("ix_cancel_requests_contract_id", "cancel_requests", ["contract_id"], unique=False)
+    op.create_index(
+        "ix_cancel_requests_contract_id", "cancel_requests", ["contract_id"], unique=False
+    )
 
 
 def downgrade() -> None:
