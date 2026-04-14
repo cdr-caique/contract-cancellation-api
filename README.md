@@ -92,8 +92,9 @@ pre-commit run --all-files
 
 Arquivos principais:
 
-- `alembic.ini`
+- `./alembic.ini` (na raiz do projeto)
 - `alembic/env.py`
+- `alembic/script.py.mako` (template usado para gerar novas revisions)
 - `alembic/versions/0001_initial_contract_schema.py`
 
 Comandos úteis:
