@@ -1,5 +1,8 @@
 # API de Cancelamento de Contrato
 
+[![CI](https://github.com/cdr-caique/contract-cancellation-api/actions/workflows/ci.yml/badge.svg)](https://github.com/cdr-caique/contract-cancellation-api/actions/workflows/ci.yml)
+[![Create Release Branch](https://github.com/cdr-caique/contract-cancellation-api/actions/workflows/create-release-branch.yml/badge.svg)](https://github.com/cdr-caique/contract-cancellation-api/actions/workflows/create-release-branch.yml)
+
 API REST em FastAPI para gerenciamento de contratos com cancelamento idempotente, proteção de concorrência e reprocessamento de contratos travados.
 
 ## Stack
